@@ -14,13 +14,13 @@ export const App = () => {
     const buttonName = event.target.name;
     switch (buttonName) {
       case 'good':
-        setGood(prev => prev + 1);
+        setGood(prevState => prevState + 1);
         break;
       case 'neutral':
-        setNeutral(prev => prev + 1);
+        setNeutral(prevState => prevState + 1);
         break;
       case 'bad':
-        setBad(prev => prev + 1);
+        setBad(prevState => prevState + 1);
         break;
       default:
         console.log(`Ooops... error ocured.`);
